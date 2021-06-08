@@ -66,7 +66,7 @@
   )
 
 
-(defptest operation-validation
+(deftest operation-validation
   ;;valid upsert
   (is (true? (op/valid? {:type "upsert" :path "/a/b" :value 23})))
   ;;valid remove
